@@ -1,0 +1,97 @@
+html {
+  font-family: "Unica One", sans-serif;
+}
+
+h1 {
+  color: #fff;
+  animation: fade 1s linear;
+  transform: translateX(-330px);
+  transform: translateY(-500px);
+  z-index: 999;
+}
+
+#narwhal-body {
+  animation: lines 3s linear forwards;
+  animation-delay: 1s;
+  stroke-dashoffset: 1895px ;
+  stroke-dasharray: 1908px;
+}
+
+#narwhal-eye {
+  animation: fade 1s linear forwards;
+  animation-delay: 5s;
+  opacity: 0;
+}
+
+@keyframes fade {
+
+  0% {
+    opacity: 0;
+    filter: blur(4px);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+
+}
+
+#rainbow-violet {
+  animation: lines 3s linear forwards;
+  animation-delay: 1s;
+  stroke-dashoffset: 1918px;
+  stroke-dasharray: 1918px;
+}
+
+#rainbow-indigo {
+  animation: lines 3s linear forwards;
+  animation-delay: 1s;
+  stroke-dashoffset: 1812px;
+  stroke-dasharray: 1812px;
+}
+
+#rainbow-blue {
+  animation: lines 3s linear forwards;
+  animation-delay: 1s;
+  stroke-dashoffset: 1705px;
+  stroke-dasharray: 1705px;
+}
+
+#rainbow-green {
+  animation: lines 3s linear forwards;
+  animation-delay: 1s;
+  stroke-dashoffset: 1596px;
+  stroke-dasharray: 1596px;
+}
+
+#rainbow-yellow {
+  animation: lines 3s linear forwards;
+  animation-delay: 1s;
+  stroke-dashoffset: 1483px;
+  stroke-dasharray: 1483px;
+}
+
+#rainbow-orange {
+  animation: lines 3s linear forwards;
+  animation-delay: 1s;
+  stroke-dashoffset: 1366px;
+  stroke-dasharray: 1366px;
+}
+
+#rainbow-red {
+  animation: lines 3s linear forwards;
+  animation-delay: 1s;
+  stroke-dashoffset: 1243px;
+  stroke-dasharray: 1243px;
+}
+
+@keyframes lines {
+
+  0% {
+    stroke-dashoffset: 1900px;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+
+}
